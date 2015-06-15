@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="initial-scale=1.0, width=device-width" name="viewport">
-	<title>Page Palettes - Material</title>
+	<title></title>
 
 	<!-- css -->
 	<link href="css/base.min.css" rel="stylesheet">
@@ -17,112 +17,19 @@
 			<script src="js/html5shiv.js" type="text/javascript"></script>
 			<script src="js/respond.js" type="text/javascript"></script>
 		<![endif]-->
-
-		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
-
-
-
- <!--<script>
-    var map;    // Google map object
-    
-    // Initialize and display a google map
-    function Init()
-    {
-        // Create a Google coordinate object for where to initially center the map
-        var latlng = new google.maps.LatLng( 5.5811579, -0.3003959 );   // Washington, DC
-        
-        // Map options for how to display the Google map
-        var mapOptions = { zoom: 15, center: latlng  };
-        
-        // Show the Google map in the div with the attribute id 'map-canvas'.
-        map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-    }
-    
-    // Update the Google map for the user's inputted address
-    function UpdateMap( )
-    {
-        var geocoder = new google.maps.Geocoder();    // instantiate a geocoder object
-        
-        // Get the user's inputted address
-        var address = document.getElementById( "address" ).value;
-    
-        // Make asynchronous call to Google geocoding API
-        geocoder.geocode( { 'address': address }, function(results, status) {
-            var addr_type = results[0].types[0];    // type of address inputted that was geocoded
-            if ( status == google.maps.GeocoderStatus.OK ) 
-                ShowLocation( results[0].geometry.location, address, addr_type );
-            else     
-                alert("Geocode was not successful for the following reason: " + status);        
-        });
-    }
-    
-    // Show the location (address) on the map.
-    function ShowLocation( latlng, address, addr_type )
-    {
-        // Center the map at the specified location
-        map.setCenter( latlng );
-        
-        // Set the zoom level according to the address level of detail the user specified
-        var zoom = 12;
-        switch ( addr_type )
-        {
-        case "administrative_area_level_1"  : zoom = 10; break;      // user specified a state
-        case "locality"                     : zoom = 15; break;     // user specified a city/town
-        case "street_address"               : zoom = 10; break;     // user specified a street address
-        }
-        map.setZoom( zoom );
-        
-        // Place a Google Marker at the same location as the map center 
-        // When you hover over the marker, it will display the title
-        var marker = new google.maps.Marker( { 
-            position: latlng,     
-            map: map,      
-            title: address
-        });
-        
-        // Create an InfoWindow for the marker
-        var contentString = "" + address + "";  // HTML text to display in the InfoWindow
-        var infowindow = new google.maps.InfoWindow( { content: contentString } );
-        
-        // Set event to display the InfoWindow anchored to the marker when the marker is clicked.
-        google.maps.event.addListener( marker, 'click', function() { infowindow.open( map, marker ); });
-    }
-    
-    // Call the method 'Init()' to display the google map when the web page is displayed ( load event )
-    google.maps.event.addDomListener( window, 'load', Init );
-
-    </script>
-
-<style>
-    /* style settings for Google map */
-    #map-canvas
-    {
-        width : 110%;  /* map width */
-        height: 350px;  /* map height */
-        margin-left:-15px;
-    }
-    </style>-->
-
-
-
-
-
-
-
-
 </head>
-<body>
+<body style="background:url(./images/acbg.png);">
 	<header class="header">
 		<ul class="nav nav-list pull-left">
-			<li>
-				<a class="menu-toggle" href="#menu">
+			<!--<li>
+				<!--<a class="menu-toggle" href="#menu">
 					<span class="access-hide">Menu</span>
 					<span class="icon icon-menu icon-lg" style="color:#1e3f7c"></span>
 					<span class="header-close icon icon-close icon-lg"></span>
 				</a>
-			</li>
+			</li>-->
 		</ul>
-		<a class="header-logo" href="main.html"><img src="images/acc.png" alt="" style="position:relative;left:0px"/></a>
+		<a class="header-logo" href="index.html"><img src="images/acc.png" alt="" style="position:relative;left:0px"/></a>
 		<!--<ul class="nav nav-list pull-right">
 			<li>
 				<a class="menu-toggle" href="#search">
@@ -140,7 +47,7 @@
 			</li>
 		</ul>-->
 	</header>
-	<nav class="menu" id="menu">
+	<!--<nav class="menu" id="menu">
 		<div class="menu-scroll">
 			<div class="menu-wrap">
 				<div class="menu-content">
@@ -168,6 +75,12 @@
 							<a href="geo/www/index.html">Geofencing</a>
 						</li>
 						
+					</ul>
+					<hr>
+					
+				
+					
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -237,98 +150,63 @@
 		</div>
 	</div>-->
 	<div class="content">
-		<div class="content-heading">
-			<div class="container">
-				<h1 class="heading">Live Chat</h1>
-			</div>
+		<div class="">
+			<!-- <div class="container">
+				<h1 class="heading">Products and Services</h1>
+			</div> -->
+			<p> <br></p>
 		</div>
-
-
-
-
-
-
-
-
 		<div class="content-inner">
 			<div class="container">
 				<div class="row">
-
-
-<div style="border: none; overflow: scroll; margin: 15px auto; max-width: 736px;">
-<!--<iframe scrolling="no" src="https://egain.accessbankplc.com/system/templates/chat/sunburst/chat.html?" style="border: 0px none;  height: 1059px; width: 100%;margin-top:-10px">
-</iframe>-->
-</div>
-		<iframe src="https://egain.accessbankplc.com/system/templates/chat/sunburst/chat.html?" width="100%" height="900px"style="margin-top:-50px">
- 
-</iframe>
-
-
-
-
-						<!-- <div style="margin-top:10px;">
-        <label for="address"> Address:</label>
-       
-        <input type="text" id="address" value="" />
-       
-        <button id="vani" onclick="UpdateMap()" >Locate</button>
-
-    </div>
- <div id='map-canvas' style="position:relative;top:5px;" ></div><br/>-->
-   
-
-
+					<div class="col-lg-8 col-md-10">
 						<!--<h2 class="content-sub-heading">Default Page Colour</h2>
 						<p>Default page colour is <code>$brand-color</code>.</p>
 						<h3 class="content-sub-heading">Other Page Colours</h3>-->
-					<!--	<div class="tile-wrap tile-wrap-animation">
-							<a class="tile" href="page-palette-blue.html">
+						<div class="tile-wrap tile-wrap-animation">
+							<a class="tile" href="products.html">
 								<div class="tile-inner">
-									<span class="icon icon-redeem " style="" ></span><span>nav 1</span><span class="icon icon-keyboard-arrow-right pull-right" style="color:#ef7f22"></span>
+									<img class="" src="images/p.png" alt="" /><span  style="font-size:20px;margin-left:5px;">Products & Services</span><span class="icon icon-keyboard-arrow-right pull-right" style="color:#ef7f22;margin-top:10px;"></span>
 								</div>
 							</a>
 							<p> </p>
-							<a class="tile" href="page-palette-green.html">
+							<a class="tile" href="topics.html">
 								<div class="tile-inner">
-									<span>nav 1</span><span class="icon icon-keyboard-arrow-right pull-right" style="color:#ef7f22"></span>
+									<img class="" src="images/n.png" alt="" /><span  style="font-size:20px;margin-left:5px;">Newsfeed</span><span class="icon icon-keyboard-arrow-right pull-right" style="color:#ef7f22;margin-top:10px;"></span>
 								</div>
 							</a>
 							<p> </p>
-							<a class="tile" href="page-palette-purple.html">
+							<a class="tile" href="atm.html">
 								<div class="tile-inner">
-									<span>nav 3</span><span class="icon icon-keyboard-arrow-right pull-right" style="color:#ef7f22"></span>
+									<img class="" src="images/l.png" alt="" /><span  style="font-size:20px;margin-left:5px;">ATM Locator </span><span class="icon icon-keyboard-arrow-right pull-right" style="color:#ef7f22;margin-top:10px;"></span>
 								</div>
 							</a>
 							<p> </p>
-							<a class="tile" href="page-palette-red.html">
+							<a class="tile" href="branches.html">
 								<div class="tile-inner">
-									<span>nav 4</span><span class="icon icon-keyboard-arrow-right pull-right" style="color:#ef7f22"></span>
+									<img class="" src="images/l.png" alt="" /><span  style="font-size:20px;margin-left:5px;">Branch Locator</span><span class="icon icon-keyboard-arrow-right pull-right" style="color:#ef7f22;margin-top:10px;"></span>
 								</div>
 							</a>
 							<p> </p>
-							<a class="tile" href="page-palette-yellow.html">
+							<a class="tile" href="live.html">
 								<div class="tile-inner">
-									<span>nav 5</span><span class="icon icon-keyboard-arrow-right pull-right" style="color:#ef7f22"></span>
+										<img class="" src="images/ch.png" alt="" /><span  style="font-size:20px;margin-left:5px;">Live Chat</span><span class="icon icon-keyboard-arrow-right pull-right" style="color:#ef7f22;margin-top:10px;"></span>
 								</div>
 							</a>
 							<p> </p>
-							<a class="tile" href="page-palette-yellow.html">
+							<a class="tile" href="makeaccount.html">
 								<div class="tile-inner">
-									<span>nav 6</span><span class="icon icon-keyboard-arrow-right pull-right" style="color:#ef7f22"></span>
+									<img class="" src="images/oc.png" alt="" /><span  style="font-size:20px;margin-left:5px;">Open An Account</span><span class="icon icon-keyboard-arrow-right pull-right" style="color:#ef7f22;margin-top:10px;"></span>
 								</div>
 							</a>
 							<p> </p>
-							<a class="tile" href="page-palette-yellow.html">
+							<a class="tile" href="geo/www/index.html">
 								<div class="tile-inner">
-									<span>nav 7</span><span class="icon icon-keyboard-arrow-right pull-right" style="color:#ef7f22"></span>
+									<img class="" src="images/g.png" alt="" /><span  style="font-size:20px;margin-left:5px;">Geofencing</span><span class="icon icon-keyboard-arrow-right pull-right" style="color:#ef7f22;margin-top:10px;"></span>
 								</div>
 							</a>
 							<p> </p>
-							<a class="tile" href="page-palette-yellow.html">
-								<div class="tile-inner">
-									<span>nav 8</span><span class="icon icon-keyboard-arrow-right pull-right" style="color:#ef7f22"></span>
-								</div>
-							</a>
+							
 						</div>
 					</div>
 				</div>
@@ -350,6 +228,7 @@
 			</div>
 		</div>
 	</div>
+
 	<script src="js/base.min.js" type="text/javascript"></script>
 </body>
 </html>
